@@ -271,8 +271,8 @@
                                 
                             </div>
                             
-                            <script>
-                                document.addEventListener('DOMContentLoaded', function () {
+                            <script type="lazyload2">
+                                setTimeout(function () {
                                     new Swiper("#slider-{{block.settings.menu_id}}", {
                                         spaceBetween: 20,
                                         centeredSlides: true,
@@ -286,7 +286,7 @@
                                         },
                                         
                                     });
-                                });
+                                }, 2000);
                             </script>
                         </div>
                         {% endif %}
